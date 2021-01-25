@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.36.2",
+  "yarnVersion": "1.22.5",
+  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
+  "repository": {
+    "url": "https://github.com/baeharam/test-monorepo",
+    "defaultBranch": "main",
+    "defaultRemote": "origin"
+  },
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+  "variants": [],
+  "projects": [
+    {
+      "packageName": "a-package",
+      "projectFolder": "packages/a-package",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "b-package",
+      "projectFolder": "packages/b-package",
+      "shouldPublish": false
+    }
+  ]
+}
